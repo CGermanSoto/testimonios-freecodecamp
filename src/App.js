@@ -1,23 +1,20 @@
-import logo from './logo.svg';
+import Testimonio from './components/Testimonio'
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='contenedor-principal'>
+        <h1>Esto es lo que dicen nuestros alumnos sobre FreeCodeCamp</h1>
+        <Testimonio
+        nombre='German Soto'
+        pais='Argentina'
+        imagen=''
+        cargo='Software Engenieer'
+        empresa='NTTDATA'
+        testimonio='Lorem Ipsum es un texto de marcador de posición comúnmente utilizado en las industrias gráficas, gráficas y editoriales para previsualizar diseños y maquetas visuales.
+                    Lorem Ipsum es un texto de marcador de posición comúnmente utilizado en las industrias gráficas, gráficas y editoriales para previsualizar diseños y maquetas visuales.'/>
+      </div>
     </div>
   );
 }
